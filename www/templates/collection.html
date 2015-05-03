@@ -1,0 +1,16 @@
+<ion-view view-title="{{collection.title}}">
+  <ion-content>
+    <ion-slide-box>
+      <ion-slide ng-repeat="photo in collection.photos">
+        <div class="options-panel">
+          <i class="icon ion-ios-heart-outline assertive wish-list"></i>
+          <i class="icon ion-social-twitter calm wish-list"></i>
+          <i class="icon ion-social-facebook positive wish-list"></i>
+        </div>
+        <ion-scroll zooming="true" direction="xy">
+          <img src="{{photo.photo}}" class="fullscreen-image">
+        </ion-scroll>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
+</ion-view>
